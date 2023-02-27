@@ -162,6 +162,7 @@ aside div p:last-child {
     margin-bottom: 0;
     font-size: 0.8em;
     text-align: right;
+    color: #515050;
 }
 
 
@@ -179,433 +180,189 @@ footer a {
     color: fuchsia;
 }
 
-/* Mobile */
-@media screen and (max-width: 576px) {
 
-    body {
-        font-size: 50%;
+
+
+
+@media screen and (min-width:769px){
+    body{ 
+        font-size: 1.5rem;
+    }  
+    h1{
+        font-size: 4.5rem;
+    } 
+    header {
+        text-align: left;
+        padding:2rem 1rem 0 1rem
+    }
+    header div img{
+        margin-bottom: 0;
+        width: 180px;
+        height: 50px;
+        margin-top: 0;
+    }
+    header div img{
+        display:inline-block;
+    }
+    header div p{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    header div, nav{
+        display: inline-block;
+        vertical-align: middle;
+    }
+  header nav{
+    float: right;
+  }
+  
+    header ul li{
+        display: inline-block;
+    }
+    table{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-inline: auto;
+        width: 80%;
+        font-size: 1.2rem;
+    }
+    iframe{
+        width: 560px;
+        height: 300px;
+    }
+    section {
+        border-radius: 20px;
+    }
+    article section{
+        width: 560px;
+        height: 300px;
+    }
+    section, iframe{
+        margin-inline: auto;
+    }
+    section h2{
+        font-size: 1.3rem;
+        background-color: #a3a3a3;
+        text-transform: capitalize;
+    }
+    iframe, section{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    aside{
+        margin-inline: auto;
+    }
+    
+    aside div{ 
+        display: inline-block;
+        width: 370px;
     }
 
-    article, aside {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
+}
 
-    h1 {
-        font-size: 3rem;
-        line-height: 1.2;
+@media screen and (max-width:768px) {
+    body{ 
+        font-size: 1.6rem;
+    }  
+    h1{
+        font-size: 5rem;
+    }  
+    header div img {
+        width: 200px;
+        margin-bottom:10px;
     }
+    header nav li {
+        display: inline;
+        margin-inline: 0.5rem;
+    }
+    table{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-inline: auto;
+        width: 70%;
+        font-size: 1.2rem;
+    }
+    input{
+        width: 480px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    button{
+        font-size: 1.2rem;
+        width: 97px;
+        height: 39px;
+    }
+    iframe{
+        height: 125px;
+    }
+    section h2{
+        font-size: 1.3rem;
+        background-color: #a3a3a3;
+        text-transform: capitalize;
+    }
+    footer{
+        font-size: 1.5rem;
+    }
+}
 
+
+@media screen and (max-width: 576px){
+    body{ 
+        font-size: 1rem;
+    }  
+    h1{
+        font-size: 2.4rem;
+    }  
+    section h2{
+        font-size: 1.3rem;
+        background-color: #a3a3a3;
+        text-transform: capitalize;
+    }
     header div img {
         width: 160px;
-        margin-top: 10px;
-        margin-bottom: 13px;
+        margin-bottom:13px;
     }
-
-    header div p {
-        font-size: 1.2rem;
-    }
-
     header nav li {
-        display: inline; 
-        font-size: 1.2rem;
+        display: inline;
         margin-inline: 0.5rem;
     }
-   
-    p {
-        font-size: 1.2rem;
-    }
-
-    article ul {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 3rem;
-    }
-
-    article li {
-        font-size: 1.2rem;
-    }
-    article h2  {
-        font-size: 1.2rem;
-        margin-top: 15px;
-    }
-
-    article ol {
-        margin-left: 3rem;
-        margin-bottom: 15px;
-    }
-
-    table {
+    table{
         width: 85%;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        font-size: 0.9rem;
     }
-
-    caption, th, td {
-        font-size: 1.2rem;
+    input{
+        width: 138px;
+        height: 20px;
+        font-size: 0.8rem;
     }
-
-    iframe {
-        height: 120px;
-        margin-bottom: 20px;
+    button{
+        font-size: 0.9rem;
     }
-
-    section {
-        margin-left: 3px;
-        margin-right: 3px;
-        margin-bottom: 25px;
+    iframe{
+        height: 125px;
     }
-
-    section h2 {
-        font-size: 1.5rem;
-        background-color: #a3a3a3;
-        text-transform: capitalize;
-        font-weight: bold;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    section p {
-        margin-left: 5px;
-
-    }
-
-    input {
-        width: 40%;
-        margin-left: 5px;
-        margin-right: 2px;
-        margin-bottom: 15px;
-        font-size: 1rem;
-        padding-top: 0.4rem;
-        padding-bottom: 0.4rem;
-    }
-
-    button {
-        font-size: 0.9rem; 
-    }
-
-    aside h2 {
-        font-size: 2.5rem;
-    }
-
-    aside div {
-        height: 90px;
-    }
-    
-    aside div {
-        padding-top: 12px;
-        padding-left: 12px;
-    }
-
-    aside a, aside p {
-        font-size: 12px;
-    }
-
-    aside div p:last-child {
-        margin-right: 5px;
-        margin-bottom: 5px;
-        font-size: 2em;
-        text-align: right;
-    }
-
-    footer {
-        font-size: 1.5rem;
-    }
-
 }
 
-/* Tablet */
-
-@media screen and (max-width: 768px) {
-
-    article, aside {
-        margin-right: 15px;
-        margin-left: 15px;
+@media print {
+    body{
+        font-family: Poppins, 'Helvetica Neue', sans-serif;
     }
-
-    h1 {
-        font-size: 6rem;
-        line-height: 1.2;
+    header{
+        display: none;
     }
-
-    header div img {
-        width: 250px;
-        margin-bottom: 20px;
+    main{
+        box-shadow: none;
     }
-
-    header div p {
-        font-size: 2rem;
-        margin-bottom: 20px;
+    iframe{
+        display: none;
     }
-
-    header nav li {
-        display: inline; 
-        font-size: 2rem;
-        margin-inline: 0.5rem;
+    section{
+        display: none;
     }
-   
-    p {
-        font-size: 2rem;
+    aside{
+        display: none;
     }
-
-    article ul {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 3rem;
+    footer{
+        display: none;
     }
-
-    article li {
-        font-size: 2rem;
-    }
-    article h2  {
-        font-weight: bold;
-        font-size: 2.3rem;
-        margin-top: 15px;
-    }
-
-    article ol {
-        margin-left: 3rem;
-        margin-bottom: 15px;
-    }
-
-    table {
-        margin-top: 60px;
-        margin-bottom: 80px;
-        margin-inline: auto;
-        width: 70%;
-    }
-
-    caption, th, td {
-        font-size: 2rem;
-    }
-
-    iframe {
-        height: 180px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    section {
-        margin-left: 3px;
-        margin-right: 3px;
-        margin-top: 10px;
-        margin-bottom: 25px;
-    }
-
-    section h2 {
-        font-size: 2rem;
-        background-color: #a3a3a3;
-        text-transform: capitalize;
-        font-weight: bold;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    section p {
-        margin-left: 5px;
-    }
-
-    input {
-        width: 70%;
-        padding-left: 15px;
-        margin-right: 2px;
-        margin-bottom: 15px;
-        font-size: 1.5rem;
-        padding-top: 1.2rem;
-        padding-bottom: 1.2rem;
-    }
-
-    button {
-        font-size: 1.2rem; 
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
-    }
-
-    aside h2 {
-        font-size: 3rem;
-    }
-
-    aside div {
-        height: 120px;
-    }
-    
-    aside div {
-        padding-top: 12px;
-        padding-left: 20px;
-    }
-
-    aside a, aside p {
-        font-size: 18px;
-    }
-
-    aside div p:last-child {
-        margin-right: 5px;
-        margin-bottom: -2px;
-        font-size: 1em;
-        text-align: right;
-    }
-
-    footer {
-        font-size: 2rem;
-    }
-
-}
-
-/* Desktop */
-
-@media screen and (min-width: 1200px) {
-
-    main {
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-
-    article, aside {
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-
-    h1 {
-        font-size: 5rem;
-        line-height: 1.2;
-    }
-
-    header div img {
-        display: inline-block;
-        width: 250px;
-        margin-left: -10px;
-        margin-bottom: 20px;
-    }
-
-    header div p {
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
-
-    header nav li {
-        display: inline; 
-        font-size: 2rem;
-        margin-inline: 0.5rem;
-    }
-   
-    p {
-        font-size: 2rem;
-    }
-
-    article ul {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 3rem;
-    }
-
-    article li {
-        font-size: 2rem;
-    }
-    article h2  {
-        font-weight: bold;
-        font-size: 2.3rem;
-        margin-top: 15px;
-    }
-
-    article ol {
-        margin-left: 3rem;
-        margin-bottom: 15px;
-    }
-
-    table {
-        margin-top: 60px;
-        margin-bottom: 80px;
-        margin-inline: auto;
-        width: 70%;
-    }
-
-    caption, th, td {
-        font-size: 2rem;
-    }
-
-    iframe {
-        display: inline-block;
-        width: 500px;
-        height: 350px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    section {
-        display: inline-block; 
-        width: 500px;
-        margin-left: 3px;
-        margin-right: 3px;
-        margin-top: 10px;
-        margin-bottom: 25px;
-    }
-
-    section h2 {
-        font-size: 2rem;
-        background-color: #a3a3a3;
-        text-transform: capitalize;
-        font-weight: bold;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    section p {
-        margin-left: 5px;
-    }
-
-    input {
-        width: 70%;
-        padding-left: 15px;
-        margin-right: 2px;
-        margin-bottom: 15px;
-        font-size: 1.5rem;
-        padding-top: 1.2rem;
-        padding-bottom: 1.2rem;
-    }
-
-    button {
-        font-size: 1.2rem; 
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
-    }
-
-    aside h2 {
-        font-size: 3rem;
-    }
-
-    aside div {
-        height: 120px;
-    }
-    
-    aside div {
-        padding-top: 12px;
-        padding-left: 20px;
-    }
-
-    aside a, aside p {
-        font-size: 18px;
-    }
-
-    aside div p:last-child {
-        margin-right: 5px;
-        margin-bottom: -2px;
-        font-size: 1em;
-        text-align: right;
-    }
-
-    footer {
-        font-size: 2rem;
-    }
-
-    
 }
